@@ -59,6 +59,12 @@ Those normalized records include official solution and rubric text as post-run
 evaluation metadata. For both answer-blind runs, those fields were never model
 inputs.
 
+The auditable controller, solver, compile-repair, reviewer, and verifier source
+snapshot is published in
+[`answer-blind-solving-pipeline`](answer-blind-solving-pipeline/). It includes
+the exact GPT/Kimi review prompts and source/run provenance, but excludes
+credentials, official-answer inputs, campaign state, logs, and model sessions.
+
 ## Scope
 
 The preserved runs cover the nine **theoretical** problems. The separate
