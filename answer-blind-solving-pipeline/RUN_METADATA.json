@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "scope": "IChO 2026 answer-blind Lean full32",
+  "filesystem_answer_blind": true,
+  "network_answer_blind": false,
+  "official_evaluation_after_generation": true,
+  "runs": {
+    "gpt-5.6-sol": {
+      "generation_source_commit": "f3e0c9997b3bd57018983c5dca54ce4342ed4070",
+      "release_validation_commit": "c9fcdb4c7abcb33f242edc401bef9131f2417c53",
+      "published_source_branch_commit": "515f485c841b55a349a755aa3afa4659a8c6cd4d",
+      "historical_launcher_sha256": "a92ba10d7c08d4a3a9953e7b0aebc841b9d635b482fbc2c28e08c823a87d6e1d",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "max",
+      "max_parallel": 32,
+      "compile_feedback_attempts": 3,
+      "review_redraft_attempts": 3
+    },
+    "kimi-k3": {
+      "generation_source_commit": "49360f26a1196d108ec98f66a341b5d04f3c6d2c",
+      "sealed_runtime_source_commit": "10b04c62f66af0815bfa0bfa3c5cb3cbd5ef5358",
+      "historical_base_launcher_sha256": "e4028cc3e7264fbe54056dab0250a37caa618425e2669408b54ff5380f6d9ad4",
+      "historical_provider_wrapper_sha256": "975e22fb03e86fb54ae89af6fdfd473dbd1be695ab49e0678b5c7cd8ecea5611",
+      "harness_model": "kimi-k3[1m]",
+      "provider_receipt_model": "anthropic-kimi-k3",
+      "reasoning_effort": "max",
+      "max_parallel": 4,
+      "compile_feedback_attempts": 3,
+      "review_redraft_attempts": 3
+    }
+  }
+}

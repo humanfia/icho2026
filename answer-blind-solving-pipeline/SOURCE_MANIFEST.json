@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/humanfia/science-mango",
+  "shared_script_snapshot_commit": "49360f26a1196d108ec98f66a341b5d04f3c6d2c",
+  "gpt_prompt_snapshot_commit": "f3e0c9997b3bd57018983c5dca54ce4342ed4070",
+  "kimi_prompt_snapshot_commit": "49360f26a1196d108ec98f66a341b5d04f3c6d2c",
+  "runtime_baseline_commit": "10b04c62f66af0815bfa0bfa3c5cb3cbd5ef5358",
+  "copied_source_policy": "whitelist only; no datasets, solutions, graders, credentials, logs, sessions, caches, or campaign state",
+  "upstream_tests": [
+    "tests/test_answer_blind_archon_campaign.py",
+    "tests/test_answer_blind_archon_isolated_campaign.py",
+    "tests/test_answer_blind_chatgpt_login_proxy.py",
+    "tests/test_answer_blind_independent_review.py",
+    "tests/test_answer_blind_isolation.py",
+    "tests/test_answer_blind_model_broker.py",
+    "tests/test_answer_blind_runtime_installer.py",
+    "tests/test_answer_blind_structured_solver.py",
+    "tests/test_answer_blind_verifier.py",
+    "tests/test_answer_blind_workspace_config.py",
+    "tests/test_icho_answer_blind_bundle.py"
+  ]
+}

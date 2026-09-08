@@ -1,0 +1,416 @@
+{
+  "manifest": {
+    "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+    "manifest_type": "trusted_chemistry_registry",
+    "record_count": 9,
+    "records": [
+      {
+        "record_sha256": "6485cda7ae7d9289f5046b238be831dd3fd55e7dc81ae87310390a8f7db68d22",
+        "rule_id": "aqueous_feiii_phenol_colored_complex",
+        "rule_version": 1
+      },
+      {
+        "record_sha256": "29206c5777d9931cbf7928cb6399ecf416a1185e657a5f77954ec376ec9cf18b",
+        "rule_id": "closed_candidate_cryolite_aluminum_production_filter",
+        "rule_version": 1
+      },
+      {
+        "record_sha256": "ec6cff1cee7889c97ad67a0f5c9a33d1462a67ea6f14a01dc1087cd10e67e7be",
+        "rule_id": "closed_candidate_feiii_phenol_filter",
+        "rule_version": 2
+      },
+      {
+        "record_sha256": "b1720156ef1b5e8e0c169a12cfe0179fe95bcba91841e53a5a8b6fba91b73308",
+        "rule_id": "closed_domain_mellite_terminal_residue_candidate_filter",
+        "rule_version": 2
+      },
+      {
+        "record_sha256": "95b269e7749a26345fbc62a57b37412f5c71ff985d4a7929f088024bdef1309d",
+        "rule_id": "directed_reaction_omitted_protocol_candidate_filter",
+        "rule_version": 1
+      },
+      {
+        "record_sha256": "5d439704d58d346d7b8e8b99b0d6d46e00dccb24faffaa04ebc62c8ced6f5d3f",
+        "rule_id": "hexamethylbenzene_cold_kmno4_to_mellitic_acid",
+        "rule_version": 1
+      },
+      {
+        "record_sha256": "10464e5c61ad1f8fadb8fbc47aaadc8681c5ce312e78754e691d2976cd755f2b",
+        "rule_id": "mellite_ideal_stoichiometry",
+        "rule_version": 1
+      },
+      {
+        "record_sha256": "3fa43db85f19904841d9d1374bf87e5e20a0d5b347b5f0a3cff0ed0e18894811",
+        "rule_id": "mellitic_acid_benzoyl_chloride_to_c12o9",
+        "rule_version": 1
+      },
+      {
+        "record_sha256": "3b7cdcf821c3e9a5dd9afa3619055d24128848437b7c52d0af517b61c64c5e1a",
+        "rule_id": "mellitic_acid_p2o5_heating_forms_some_trianhydride",
+        "rule_version": 1
+      }
+    ],
+    "schema_version": 1,
+    "manifest_sha256": "801783bce40546c54633e6292f62aee68706a2bc4bd359dda70085321ed49808"
+  },
+  "records": [
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_sha256": "6485cda7ae7d9289f5046b238be831dd3fd55e7dc81ae87310390a8f7db68d22",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-24T03:10:00Z",
+        "reviewer_id": "trusted-worktree-curator-v1",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "The test medium is aqueous and contains available iron(III).",
+          "The phenolic hydroxy group is structurally accessible.",
+          "The observed colour is distinct from the iron(III) reagent blank."
+        ],
+        "authority_kind": "peer_reviewed_literature",
+        "automatic_problem_instantiation": false,
+        "claim": "In aqueous media where iron(III) remains available for coordination, an accessible phenolic hydroxy group can form a visibly colored iron(III)-phenol or iron(III)-phenolate complex.",
+        "exclusions": [
+          "This forward rule is not an unconditional colour-implies-phenol inverse.",
+          "A negative result does not exclude every phenol.",
+          "Precipitation, incompatible pH, or competing strong ligands are outside scope.",
+          "The rule does not identify a particular molecule."
+        ],
+        "rule_id": "aqueous_feiii_phenol_colored_complex",
+        "rule_version": 1
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "content_sha256": "b8b2efefde3c552cde5211e865462bef4add50e3422ed45edd0b46554b250aae",
+        "doi": "10.1038/1651012b0",
+        "locator": "Nature 165 (1950) 1012, complete one-page letter; absorption and titration study of freshly prepared aqueous ferric chloride-phenol coloured complexes.",
+        "url": "https://www.nature.com/articles/1651012b0"
+      }
+    },
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_sha256": "29206c5777d9931cbf7928cb6399ecf416a1185e657a5f77954ec376ec9cf18b",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-25T00:00:00Z",
+        "reviewer_id": "trusted-worktree-curator-v2",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "One exact input-source locator binds every one of these cues to the same unknown compound D and metal Q: anhydrous C reacts with excess NaF to yield D, D contains displayed mass fractions of 32.85% sodium and 12.85% Q, and D is used in industrial production of Q.",
+          "Before nomination, a source-first staged-species audit enumerates every allowed solid input and output, volatile or other byproduct, and external input, and binds every admitted element to the problem source or a separately sealed authority; anonymous material streams and mere failure to mention another constituent are insufficient.",
+          "That audit affirmatively closes D as one anhydrous, neutral, stoichiometric phase with complete element domain exactly Na, Q, and F; closes anhydrous C as one Q/F phase; and establishes NaF as the only external sodium-bearing input to the directed C-to-D stage.",
+          "The cited EPA process statement is used only to nominate the exact candidate pair aluminum and stoichiometric cryolite Na3AlF6 within that closed domain; it is not treated as an exhaustive inventory of every substance used by industry.",
+          "Using controller-pinned atomic weights and their uncertainties, the audit checks the candidate's complete unrounded molar mass, sodium fraction, Q fraction, fluorine remainder, charge balance, and primitive integer stoichiometry against both source-displayed two-decimal mass intervals without candidate-shaped tolerances or staged rounding.",
+          "The identities and formulas of C and its hydrate are not imported from the EPA source: after the D candidate is retained, a separate source-led atom and charge ledger must balance the directed anhydrous-C plus NaF stage, and a finite positive-integer hydrate audit must uniquely satisfy the displayed water-mass interval.",
+          "Every candidate admitted by the declared finite domain is subjected to the same complete audits; if another candidate passes, or a coefficient, oxidation-state, element, phase, or hydrate bound is solver-created rather than source-bound, the result remains underdetermined.",
+          "The current bridge obligation records the exact problem locators, complete staged-species domain, candidate inventory, pinned-constant receipts, raw interval calculations, balanced reaction ledger, and every exclusion so that no applicability condition depends on an open-world absence assumption."
+        ],
+        "authority_kind": "contest_semantics_policy",
+        "automatic_problem_instantiation": false,
+        "claim": "Within an explicitly closed, source-bounded domain satisfying every listed condition, the source-stated conjunction that a sodium-metal-fluoride compound is used in industrial production of the same metal may use the cited EPA fact only to nominate the candidate pair aluminum and stoichiometric cryolite Na3AlF6 for a bounded filter. That candidate may be retained only when the independent complete composition, charge, primitive-stoichiometry, reaction-ledger, and displayed-mass-interval audit passes uniquely.",
+        "exclusions": [
+          "This policy is not the universal inverse used-in-production-of-Q implies cryolite or aluminum.",
+          "The EPA source does not identify an open-world unknown, construct or close the problem's candidate domain, or prove that cryolite is the only material used in aluminum production.",
+          "Cryolite is the electrolyte and solvent in the cited primary-aluminum process; the rule does not make it the aluminum-bearing feedstock, the sole bath component, or a reagent that must be consumed.",
+          "Actual baths containing aluminum fluoride, calcium fluoride, lithium salts, dissolved alumina, excess components, mixtures, dopants, substituted phases, or nonstoichiometric cryolite do not establish that an unknown compound is pure Na3AlF6.",
+          "The source establishes neither the identity or formula of C, the hydrate number, reaction completeness, a sole-product claim, phase purity, element closure, oxidation state, nor any unprinted protocol detail.",
+          "Mass agreement alone cannot select a candidate, supply a missing constituent, impose an arbitrary coefficient bound, or exclude an unenumerated alternative.",
+          "The policy does not apply to secondary-aluminum processing, aluminum-chloride electrolysis, production of another metal, or a use clue that is absent, ambiguous, or bound to a different compound or metal.",
+          "Any missing staged-species record, any unclassified material stream, any incompatible source cue, or any second passing candidate makes the policy inapplicable and the target must fail closed."
+        ],
+        "rule_id": "closed_candidate_cryolite_aluminum_production_filter",
+        "rule_version": 1
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "content_sha256": "f4ef5bbaf71ebdf7facaa5db53fe8c100098fae1bb3aa850c5641baff2b668de",
+        "doi": null,
+        "locator": "U.S. EPA AP-42, Fifth Edition, Volume I, Section 12.1.2.2, printed pages 12.1-1 to 12.1-2: the Hall-Heroult process produces aluminum metal, and molten cryolite (Na3AlF6) functions as the electrolyte and solvent for alumina.",
+        "url": "https://www.epa.gov/sites/production/files/2020-11/documents/c12s01.pdf"
+      }
+    },
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_sha256": "ec6cff1cee7889c97ad67a0f5c9a33d1462a67ea6f14a01dc1087cd10e67e7be",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-25T02:57:57Z",
+        "reviewer_id": "trusted-worktree-curator-v2",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "An independently source-bound exact-carbon-count derivation, using no iron(III)-response premise, establishes a finite and explicitly closed candidate domain.",
+          "The problem authors explicitly label a positive aqueous iron(III) colour response as characteristic; the exact positive-response text and test-condition locator are recorded.",
+          "Every candidate's complete source-bound structure is audited for an accessible phenolic hydroxy group, and each structural-feature assignment is traceable to problem text or separately sealed evidence.",
+          "For a candidate without an accessible phenolic hydroxy group, every functionality relevant to the response is source-bound and lies within this fixed non-phenolic whitelist: unactivated aliphatic alcohol, saturated ether, hydrocarbon, or simple non-chelating monoketone.",
+          "The source-bound candidate audit establishes that no candidate contains a beta-dicarbonyl or enol, hydroxamate, catecholate-like group, other explicitly iron-binding ligand, or unclassified functionality relevant to the response.",
+          "The test-condition audit checks the explicit aqueous iron(III) cue and that the problem source does not explicitly state an incompatible pH, strong ligand, precipitation branch, alternative reagent, or nonselective branch; it does not require or infer unstated test details.",
+          "The current bridge obligation records the closed domain, independent exact-carbon derivation, characteristic positive cue, every candidate structure and whitelist classification, and the test-condition audit so each condition can be checked without a solver-created category or open-world absence assumption."
+        ],
+        "authority_kind": "contest_semantics_policy",
+        "automatic_problem_instantiation": false,
+        "claim": "Within an independently exact-carbon-derived finite closed candidate domain satisfying every listed condition, a positive aqueous iron(III) colour response that the problem authors explicitly label as characteristic may be used only as a bounded filter between candidates with a source-audited accessible phenolic hydroxy group and candidates whose response-relevant functionality lies entirely within the fixed non-phenolic whitelist.",
+        "exclusions": [
+          "This policy is not a universal colour-implies-phenol chemical law.",
+          "It does not identify an open-world unknown, construct the candidate set, infer the carbon count, or establish that the domain is closed.",
+          "It does not authorize inference when the characteristic label is solver-supplied, the response is negative or ambiguous, the medium is not source-bound as aqueous, or any required source-stated cue or required audit is missing.",
+          "Any beta-dicarbonyl or enol, hydroxamate, catecholate-like group, other explicitly iron-binding ligand, or unclassified response-relevant functionality makes this policy inapplicable.",
+          "The fixed whitelist cannot be expanded by a candidate, solver, or Reviewer, and classification by mere failure to find an interferent is insufficient.",
+          "It does not infer unstated pH, ligand concentration, solubility, selectivity, reagent identity, or other experimental detail.",
+          "It does not use a negative test to exclude every phenol.",
+          "The cited study reports selectivity only for its tested paint-and-resin panel and protocol; it does not itself establish this policy for arbitrary candidate domains.",
+          "The cue alone does not identify a particular molecule or authorize any conclusion outside the audited finite domain."
+        ],
+        "rule_id": "closed_candidate_feiii_phenol_filter",
+        "rule_version": 2
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "content_sha256": "31b0a37ddab2aba737a30d94dbd514b0a5831ac61451631a2b73dd7164148286",
+        "doi": "10.4011/shikizai1937.35.59",
+        "locator": "Journal of the Japan Society of Colour Material 35(2) (1962) 59-61; page 59 abstract and page 61 discussion and conclusion, limited to the tested paint-and-resin panel and protocol.",
+        "url": "https://www.jstage.jst.go.jp/article/shikizai1937/35/2/35_59/_article/-char/en"
+      }
+    },
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-25T00:00:00Z",
+        "reviewer_id": "trusted-worktree-curator-v1",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "One exact input-source locator binds all of these cues to the same observation: thermogravimetric analysis, an unambiguous stated atmosphere, a later mass-loss event, wording that names the ensuing mass as final, a named single compound assigned to that mass, and a statement that its mass remains constant at higher temperatures.",
+          "The conjunctive named-final cue is accepted only as a bounded terminal-product stipulation under explicit closed contest semantics; a plateau, stable mass, or high-temperature constancy without every cue in the preceding condition is insufficient.",
+          "The current source bundle either contains a controller-authenticated fallback for each prior-part conclusion or the redraft transparently rederives the starting material's metal identity and charge, the organic anion's identity and charge, and the stoichiometric salt core from bound prior-part sources; this policy identifies none of them, and a prior-part question or label, material name, or occurrence alone establishes none of them.",
+          "Every earlier mass-loss stage is represented in a source-led mass ledger. If an earlier stage is used to identify a volatile component or unchanged intermediate, that identity and completeness are established independently; the conjunctive named-final cue supplies neither.",
+          "The pinned Treccani source is used only as qualitative corroboration that a source-led starting candidate within its exact material scope can leave the residue class described there; it is not used as a thermogravimetric record or as a quantitative conversion premise.",
+          "A finite closed candidate audit enumerates every primitive neutral integer terminal-residue formula compatible with the independently established element and oxidation-state domain, then checks atom, charge, and every measured-mass interval using pinned constants and source uncertainties.",
+          "Every possible counterion, dopant, container, reagent, and alternative atmosphere contribution is affirmatively excluded by source-bounded evidence or an explicit closed-domain stipulation; mere failure to mention one is insufficient."
+        ],
+        "authority_kind": "contest_semantics_policy",
+        "automatic_problem_instantiation": false,
+        "claim": "Within an explicitly closed source-bounded domain satisfying every listed condition, the source's conjunctive named-final cue may be used only to retain a primitive neutral terminal-residue formula candidate that passes the complete atom, charge, and measured-mass interval audit.",
+        "exclusions": [
+          "This policy is not a paper or universal empirical calcination law and does not identify an open-world residue.",
+          "A bare stable plateau, an ambiguous or unstated atmosphere, a mass not expressly called final, or a residue not expressly named as a single compound cannot activate the policy.",
+          "An activation receipt proves catalog integrity and redraft availability only; it does not prove that any named-final cue or other applicability condition is present.",
+          "The named-final cue does not establish the identity or completeness of any earlier dehydration, decomposition, oxidation, or volatilization step.",
+          "The Treccani observation does not establish thermogravimetric conditions, complete conversion, quantitative recovery, or a temperature-time program.",
+          "It does not authorize any specific temperature, duration, yield, purity, phase, or polymorph.",
+          "It does not authorize selection from mass agreement alone or supply missing constituents, oxidation states, candidate closure, uncertainty bounds, or exclusions."
+        ],
+        "rule_id": "closed_domain_mellite_terminal_residue_candidate_filter",
+        "rule_version": 2
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "doi": null,
+        "locator": "Piazza, Mellite, Enciclopedia Italiana (1934), sentence reporting that mellite burns in a blowpipe test and leaves an infusible alumina residue. Normalized Italian sentence SHA-256: 5b58d1ef840834a81224de8487fde93c4f09ef2ed4643f70f0e530cdc76357a5.",
+        "url": "https://www.treccani.it/enciclopedia/mellite_%28Enciclopedia-Italiana%29/",
+        "content_sha256": "e70b86d5caf6a3ddc2de272796dabece6197d5e3f6e396ece643188e680bcb2e"
+      },
+      "record_sha256": "b1720156ef1b5e8e0c169a12cfe0179fe95bcba91841e53a5a8b6fba91b73308"
+    },
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-25T00:00:00Z",
+        "reviewer_id": "trusted-worktree-curator-v1",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "An exact input-source locator binds one explicit directed reaction statement in which a source-named reactant, source-named reagent, and source-named product role occur in the same clause; the direction is source-stated rather than solver-supplied.",
+          "The source omits one or more protocol details, and every omitted detail is recorded as unknown rather than inferred.",
+          "The identities of the reactant and reagent and the role of the product are each independently established from source-bounded evidence; this policy identifies none of them.",
+          "Every independent source constraint on the product, including composition and symmetry when supplied, is represented before candidate filtering.",
+          "A finite, explicitly closed candidate set is derived without this policy and completely audited against the directed statement and every independent source constraint.",
+          "Any empirical transformation rule used alongside this policy independently satisfies its own exact substrate, reagent, and protocol applicability conditions."
+        ],
+        "authority_kind": "contest_semantics_policy",
+        "automatic_problem_instantiation": false,
+        "claim": "Within an explicitly closed source-bounded candidate set satisfying every listed condition, an explicit directed statement that a named reactant reacts with a named reagent to give a named product role may be used only as a non-exclusive positive constraint for retaining compatible candidates when protocol details are omitted.",
+        "exclusions": [
+          "This policy does not infer heating, temperature, time, pressure, solvent, atmosphere, catalyst, concentration, workup, or apparatus from a missing protocol.",
+          "It does not establish yield, conversion extent, completeness, purity, isolation, mass balance, or sole or principal product status.",
+          "A literature transformation with extra conditions may not supply an omitted source condition or be treated as applicable merely because its substrate and reagent resemble the source clause.",
+          "The policy neither identifies any reactant, reagent, or product nor selects a candidate from composition, symmetry, or mass agreement alone.",
+          "It does not authorize a reverse implication, an open-world classification, a thermal-decomposition inference, or a terminal-residue inference.",
+          "The IUPAC source establishes only directional reactant-to-product semantics for a chemical reaction equation; it does not establish this bounded contest policy or any omitted protocol detail."
+        ],
+        "rule_id": "directed_reaction_omitted_protocol_candidate_filter",
+        "rule_version": 1
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "doi": "10.1039/9781847557889",
+        "locator": "IUPAC Green Book, 3rd ed., 2nd printing (2008), section 2.12.1, printed p. 68, Equations for chemical reactions: the reactant and product sides are connected by an arrow whose rightward form denotes the net forward reaction. The source does not supply omitted experimental conditions.",
+        "url": "https://iupac.qmul.ac.uk/bibliog/GreenBook3rd2pt2008.pdf",
+        "content_sha256": "6076dbf045427d68c6cdda3d5632223a69b5d14fd7304f5cb50ce4519d3aefde"
+      },
+      "record_sha256": "95b269e7749a26345fbc62a57b37412f5c71ff985d4a7929f088024bdef1309d"
+    },
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_sha256": "5d439704d58d346d7b8e8b99b0d6d46e00dccb24faffaa04ebc62c8ced6f5d3f",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-24T03:10:00Z",
+        "reviewer_id": "trusted-worktree-curator-v1",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "The substrate is exactly hexamethylbenzene.",
+          "The oxidant is potassium permanganate.",
+          "The reported cold-condition transformation is the claimed scope."
+        ],
+        "authority_kind": "peer_reviewed_literature",
+        "automatic_problem_instantiation": false,
+        "claim": "Under the reported cold potassium-permanganate conditions, hexamethylbenzene can be oxidized to mellitic acid.",
+        "exclusions": [
+          "The record does not establish an acidic medium.",
+          "It does not generalize to arbitrary alkylbenzenes.",
+          "It does not claim a unique product, rate, or yield outside the reported protocol."
+        ],
+        "rule_id": "hexamethylbenzene_cold_kmno4_to_mellitic_acid",
+        "rule_version": 1
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "content_sha256": "dd76b471386d1b8758bb79e9e23a137aa730ec2a6d532e5ecc46353b84bc5ed1",
+        "doi": "10.3406/bulmi.1881.1611",
+        "locator": "Bulletin de la Société minéralogique de France 4 (1881) 26-28, page 26 opening paragraph.",
+        "url": "https://www.persee.fr/doc/bulmi_0150-9640_1881_num_4_1_1611"
+      }
+    },
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_sha256": "10464e5c61ad1f8fadb8fbc47aaadc8681c5ce312e78754e691d2976cd755f2b",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-24T03:10:00Z",
+        "reviewer_id": "trusted-worktree-curator-v1",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "The phase has been independently established as crystalline mellite.",
+          "The material is treated as an ideal stoichiometric phase."
+        ],
+        "authority_kind": "peer_reviewed_literature",
+        "automatic_problem_instantiation": false,
+        "claim": "The ideal crystalline mineral mellite has composition Al2[C6(COO)6]·16H2O, equivalently [Al(H2O)6]2·C12O12·4H2O.",
+        "exclusions": [
+          "Occurrence in a coal or lignite deposit alone does not identify a sample.",
+          "Impure or nonstoichiometric material is outside scope.",
+          "This rule does not determine a thermal-decomposition residue."
+        ],
+        "rule_id": "mellite_ideal_stoichiometry",
+        "rule_version": 1
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "content_sha256": "bf025e9723ed2507b253c56b3f3dd3768d1d804ec84940e0117abe428205518e",
+        "doi": "10.1107/S0567740873001925",
+        "locator": "Acta Crystallographica B29 (1973) 26-31, page 26 abstract and reported single-crystal composition.",
+        "url": "https://journals.iucr.org/paper?buy=yes&cnor=a09820"
+      }
+    },
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_sha256": "3fa43db85f19904841d9d1374bf87e5e20a0d5b347b5f0a3cff0ed0e18894811",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-24T03:10:00Z",
+        "reviewer_id": "trusted-worktree-curator-v1",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "The substrate is mellitic acid.",
+          "The dehydrating reagent and heating protocol are the reported benzoyl-chloride procedure."
+        ],
+        "authority_kind": "peer_reviewed_literature",
+        "automatic_problem_instantiation": false,
+        "claim": "In the reported six-hour heating protocol with a large excess of benzoyl chloride, mellitic acid undergoes complete dehydration to C12O9; warm-water hydration by three water equivalents regenerates the acid.",
+        "exclusions": [
+          "This record does not authorize substitution of phosphorus pentoxide.",
+          "It does not generalize to arbitrary polycarboxylic acids or dehydrating reagents."
+        ],
+        "rule_id": "mellitic_acid_benzoyl_chloride_to_c12o9",
+        "rule_version": 1
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "content_sha256": "40301fafc80b89d2f8539d33d8a3c64440fa2105a7736103f262658dfed4556c",
+        "doi": "10.1002/cber.191304601105",
+        "locator": "Berichte der deutschen chemischen Gesellschaft 46 (1913) 813-815; page 814 preparation and page 815 hydration and analysis.",
+        "url": "https://doi.org/10.1002/cber.191304601105"
+      }
+    },
+    {
+      "base_dataset_sha256": "3f9ac23f3515cf263275c244772de895c5402fb59a12061aa81c65ede91c094f",
+      "record_sha256": "3b7cdcf821c3e9a5dd9afa3619055d24128848437b7c52d0af517b61c64c5e1a",
+      "record_type": "trusted_chemistry_rule",
+      "review": {
+        "approval_scope": "rule_and_source",
+        "approved_at": "2026-08-24T09:10:00Z",
+        "reviewer_id": "trusted-worktree-curator-v1",
+        "status": "approved"
+      },
+      "rule": {
+        "applicability_conditions": [
+          "The substrate is exactly mellitic acid.",
+          "The reagent is exactly phosphorus pentoxide and the mixture is heated.",
+          "The product reference is limited to the mellitic trianhydride identified by the immediately preceding discussion in the cited paper.",
+          "The claim is existential and partial: the paper's 'some' product formation is the maximum admitted extent."
+        ],
+        "authority_kind": "peer_reviewed_literature",
+        "automatic_problem_instantiation": false,
+        "claim": "When mellitic acid is heated with phosphorus pentoxide under the reported conditions, some mellitic trianhydride (C12O9) forms.",
+        "exclusions": [
+          "The record does not establish complete or quantitative dehydration, conversion, yield, or mass balance.",
+          "It does not establish that C12O9 is the sole or principal product, or that pure trianhydride can be isolated by this procedure.",
+          "It does not generalize to another substrate, dehydrating reagent, or unreported protocol.",
+          "It is not a thermal-decomposition rule and does not identify any open-air thermogravimetric residue."
+        ],
+        "rule_id": "mellitic_acid_p2o5_heating_forms_some_trianhydride",
+        "rule_version": 1
+      },
+      "runtime_network_access": false,
+      "schema_version": 1,
+      "source": {
+        "content_sha256": "1822acf0805229c60a29a539aa0c520b1a54114a32296da405cf6f1632d6ca7c",
+        "doi": "10.1007/BF01519380",
+        "locator": "Meyer and Steiner, Monatshefte für Chemie 35 (1914) 475–518, printed pp. 512–513: p. 512 identifies the antecedent as the trianhydride; p. 513 reports that P2O5-heating forms some of that anhydride and then limits its preparative utility. Normalized sentence SHA-256: 0f4ebc8243842aad7ebb646fe9ac80cadd07515cab6553fc80ae526403b306e6.",
+        "url": "https://archive.org/download/sim_monatshefte-fuer-chemie_1914-05_35_5/sim_monatshefte-fuer-chemie_1914-05_35_5.pdf"
+      }
+    }
+  ]
+}
